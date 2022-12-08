@@ -23,5 +23,7 @@
 ,{name: 'Zimasile', message: 'busy with checkout '}
 ,{name: 'luntu', message: 'busy with chekout'}
 ,{name: 'gift', message: 'busy with deleting'}
+,{name: 'Mishaine', message: 'busy with checkout'}
+,{name: 'thando', message: 'busy with adding on admin page'}
   ]
 localStorage.setItem('arr',JSON.stringify(temp))
