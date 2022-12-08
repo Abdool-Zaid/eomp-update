@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #form{
+            width: 80vw;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+        #form > *{
+height: 3em;
+margin: 1%;
+        }
+    </style>
+    <div id="body"></div>
+    <script src="students.js">
+    </script>
+
+    <script>
+ let body = this.document.querySelector('#body')
+    arr= JSON.parse(this.localStorage.arr)
+    console.log(arr)
+    arr.forEach(student => {
+        body.innerHTML+=`
+        <h1>${student.name}</h1>
+        <p>${student.message}</p>
+        `
+
+    });
+
+    </script>
+</body>
+</html>
